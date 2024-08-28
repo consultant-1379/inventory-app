@@ -1,0 +1,75 @@
+{
+    "instances":[
+        {
+            "name": "N100",
+            "vpods": [
+                {"name": "vPOD5",
+                    "deployments":[
+                        {"name":"deployment1"},
+                        {"name":"deployment2"}
+                    ],
+                    "clusters": [
+                        {"name": "accd01",
+                            "deployments":[
+                                {"name":"deployment1"},
+                                {"name":"deployment2"}
+                            ]
+                        }
+                    ]
+
+                },
+                {"name": "vPOD8"}
+            ]
+        },
+        {   "name": "N101",
+            "vpods": [
+                {"name": "vPOD9"}
+            ],
+            "servers":[
+                {"name": "srv1",
+                    "deployments":[
+                        {"name":"deployment1"},
+                        {"name":"deployment2"}
+                    ]},
+                {"name": "svr2"}
+            ]
+        },
+        {
+            "name": "N76",
+            "vpods": [
+                {"name": "vPOD3"},
+                {"name": "vPOD6"}
+            ]
+        },
+        {
+            "name": "N15",
+            "vpods": [
+                {"name": "vPOD1"}
+            ]
+        },
+        {
+            "name": "N128",
+            "vpods": [
+                {"name": "vPOD1"},
+                {"name": "vPOD2"},
+                {"name": "vPOD3"},
+                {"name": "vPOD4"},
+                {"name": "vPOD5"},
+                {"name": "vPOD6"}
+            ]
+        },
+        {
+            "name": "EWS",
+            "clusters": [
+                {"name": "hall144",
+                    "deployments":[
+                        {"name":"hall144-eiap"},
+                        {"name":"deployment2"}
+                    ]
+                },
+                {"name": "hall143"}
+            ]
+        }
+        
+    ]
+}

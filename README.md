@@ -1,0 +1,1 @@
+# DETS invetory app - which agreagets all info about DE TS assets

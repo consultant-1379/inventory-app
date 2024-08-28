@@ -1,0 +1,84 @@
+{{template "base" .}}
+
+{{define "navi-bar"}}
+      <nav class="appbar">
+        <div class="actions-left">
+          <div class="item">
+            <i class="navigation-toggle closed"></i>
+          </div>
+          <div class="menu-anchor open-menu">Menu</div>
+          <div class="title open-menu">
+            <span class="title-name">{{index .StringMap "page-title" }}</span>
+            <span class="subtitle">{{index .StringMap "page-sub-title" }}</span>
+          </div>
+        </div>
+        <div class="actions-right"></div>
+      </nav>
+{{end}}
+
+
+{{define "navigation" }}
+              <li><a class="item" href="/">Home</a></li>
+              <li><a class="item" href="/about">About</a></li>
+{{end}}
+
+{{define "content"}}
+ <!-- Application: Content -->
+        <div class="appcontent">
+          <!-- Row 1 -->
+          <div class="row">
+
+            <!-- Tile 1 -->
+            <div class="tile sm-12">
+              <div class="header">
+                <div class="left">
+                  <div class="title">{{ index .StringMap "title1" }}</div>
+                  <div class="subtitle">{{index .StringMap "sub-title1" }}</div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="box">{{index .StringMap "content1"}}</div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Row 1 -->
+
+          <!-- Row 2 -->
+          <div class="row">
+
+            <!-- Tile 2 -->
+            <div class="tile sm-12 xl-6">
+              <div class="header">
+                <div class="left">
+                  <div class="title">{{ index .StringMap "title2" }}</div>
+                  <div class="subtitle">{{index .StringMap "sub-title2" }}</div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="box">{{index .StringMap "content2"}}</div>
+              </div>
+            </div>
+
+            <!-- Tile 3 -->
+            <div class="tile sm-12 xl-6">
+              <div class="header">
+                <div class="left">
+                  <div class="title">{{ index .StringMap "title3" }}</div>
+                  <div class="subtitle">{{index .StringMap "sub-title3" }}</div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="box">{{index .StringMap "content3"}}</div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Row 2 -->
+
+        </div>
+{{end}}
+
+{{define "js"}}
+
+{{end}}
